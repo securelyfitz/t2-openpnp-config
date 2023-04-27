@@ -332,6 +332,9 @@
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ba5cee412f5348" name="ID-13" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
+               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1759a394881ee2d6" name="feeder118" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+               </actuator>
             </actuators>
             <cameras>
                <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1678673540716c20" axis-rotation-id="AXS167867354072bda0" id="CAM1596353127155" name="Top" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="true" anti-glare-light-off="true" enable-units-per-pixel-3-d="true" auto-view-plane-z="true" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Maximum" settle-time-ms="260" settle-timeout-ms="600" settle-threshold="8.0" settle-debounce="3" settle-full-color="false" settle-gaussian-blur="5" settle-gradients="false" settle-mask-circle="1.4142135623730951" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.6649085224716595" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0357142857142858" green-balance="1.0" blue-balance="1.4146341463414633" red-gamma="1.0450614470894546" green-gamma="1.0311982340691843" blue-gamma="0.9342813805326797" deinterlace="false" light-actuator-id="ACT1595941825286" allow-machine-actuators="true" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="top: top usb-0000:00:15.0-1.2" format-id="0" freeze-properties="false">
@@ -407,8 +410,11 @@
          <signaler class="org.openpnp.machine.reference.signaler.SoundSignaler" id="SIG169ed70bca49a34c" name="SoundSignaler" enable-error-sound="true" enable-finished-sound="true"/>
       </signalers>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR170c4e6bae8d90b0" name="ReferenceAutoFeeder" enabled="false" part-id="FIDUCIAL-HOME" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="Feeder in place detection" actuator-value="0.0" post-pick-actuator-name="feeder forward" post-pick-actuator-value="0.0" move-before-feed="true">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR170c4e6bae8d90b0" name="ReferenceAutoFeeder" enabled="false" part-id="FIDUCIAL-HOME" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="Feeder in place detection" actuator-value="118.0" post-pick-actuator-name="feeder forward" post-pick-actuator-value="118.0" move-before-feed="true">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17599a029bc3c4b8" name="ReferenceAutoFeeder" enabled="true" part-id="r1k" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="feeder forward" actuator-value="118.0" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="-209.411" y="-237.164" z="-17.1" rotation="0.0"/>
          </feeder>
       </feeders>
       <cameras>
@@ -492,19 +498,19 @@
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
          </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16a5cd8bacd14f2c" name="网络开关" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16a5cd8bacd14f2c" name="网络开关 (network switch?)" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16b3faef7ab83c04" name="Set feeder address" value-type="Double" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16c273e42abdba7c" name="打开电磁阀（吸嘴更换）" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="LeaveAsIs" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16c273e42abdba7c" name="Open  Nozzle Replacement" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="LeaveAsIs" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <actuator-profiles>
                <profiles/>
             </actuator-profiles>
          </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16c273e50b7d6e54" name="关闭电磁阀（吸嘴更换）" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16c273e50b7d6e54" name="关闭电磁阀（吸嘴更换）(close feeder?)" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
       </actuators>
@@ -520,7 +526,7 @@
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME: RepRapFirmware for Duet 2 WiFi/Ethernet FIRMWARE_VERSION: 3.3.0_10 ELECTRONICS: STM32F4 FIRMWARE_DATE: 2021-10-24 10:00:36]]></detected-firmware>
-            <reported-axes><![CDATA[X:-238.118 Y:-195.799 Z:0.000 A:0.000 B:180.000 E:0.000 E0:-0.0 Count -19049 -7832 0 0 1600 Machine -238.118 -195.799 0.000 0.000 180.000 Bed comp 0.000]]></reported-axes>
+            <reported-axes><![CDATA[X:-343.273 Y:-204.451 Z:0.000 A:0.000 B:0.000 E:0.000 E0:-0.0 Count -27462 -8178 0 0 0 Machine -343.273 -204.451 0.000 0.000 0.000 Bed comp 0.000]]></reported-axes>
             <configured-axes><![CDATA[Driver assignments: X0 Y1 Z2 (c)A3 (c)B4 E5, 5 axes visible]]></configured-axes>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
@@ -578,12 +584,11 @@
                <text><![CDATA[M84]]></text>
             </command>
          </driver>
-         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV16913afc4d178bf4" name="Feeder (CH341)" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="3000" connect-wait-time-milliseconds="5000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
-            <serial line-ending-type="LF" port-name="ttyUSB0" baud="9600" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV16913afc4d178bf4" name="Feeder (CH341)" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="3000" connect-wait-time-milliseconds="5000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="false" infinity-timeout-milliseconds="60000">
+            <serial line-ending-type="LF" port-name="ttyUSB0" baud="9600" flow-control="RtsCts" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <detected-firmware><![CDATA[FIRMWARE_NAME:GcodeServer, FIRMWARE_URL:http%3A//openpnp.org, X-SOURCE_CODE_URL:https%3A//github.com/openpnp/openpnp, FIRMWARE_VERSION:2021-11-10_04-17-14.${buildNumber}, X-FIRMWARE_BUILD_DATE:Oct 23 2020 00:00:00]]></detected-firmware>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[.*ok.*]]></text>
             </command>
@@ -646,6 +651,12 @@
             </command>
             <command head-mountable-id="ACT16d609b4dba3d0f0" type="ACTUATE_DOUBLE_COMMAND">
                <text><![CDATA[M600 N{IntegerValue} F2 T]]></text>
+            </command>
+            <command type="ACTUATE_STRING_COMMAND">
+               <text><![CDATA[M603 {StringValue}]]></text>
+            </command>
+            <command head-mountable-id="ACT1759a394881ee2d6" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{True:M600 N118 F1 T}]]></text>
             </command>
          </driver>
       </drivers>
