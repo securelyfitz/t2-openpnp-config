@@ -309,33 +309,6 @@
                <actuator class="org.openpnp.machine.reference.ReferenceActuator" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" id="ACT169cfb7cb32a86d4" name="Air pump start and stop" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
                   <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
                </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" id="ACT16b1dbe8b560e1e4" name="ID-1" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ba2429e91a12f8" name="ID-2" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ba242b206a7fbc" name="ID-3" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ba242bc193f968" name="ID-4" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ba242c6f426f40" name="ID-5" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ba242d23d4c37c" name="ID-6" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ba242dfa77db58" name="ID-8" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16ba5cee412f5348" name="ID-13" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
-               <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1759a394881ee2d6" name="feeder118" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-                  <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-               </actuator>
             </actuators>
             <cameras>
                <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1678673540716c20" axis-rotation-id="AXS167867354072bda0" id="CAM1596353127155" name="Top" looking="Down" auto-visible="false" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="true" anti-glare-light-off="true" enable-units-per-pixel-3-d="true" auto-view-plane-z="true" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Maximum" settle-time-ms="260" settle-timeout-ms="600" settle-threshold="8.0" settle-debounce="3" settle-full-color="false" settle-gaussian-blur="5" settle-gradients="false" settle-mask-circle="1.4142135623730951" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="10.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.6649085224716595" flip-x="true" flip-y="true" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0357142857142858" green-balance="1.0" blue-balance="1.4146341463414633" red-gamma="1.0450614470894546" green-gamma="1.0311982340691843" blue-gamma="0.9342813805326797" deinterlace="false" light-actuator-id="ACT1595941825286" allow-machine-actuators="true" focus-sensing-method="None" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="top: top usb-0000:00:15.0-1.2" format-id="0" freeze-properties="false">
@@ -411,35 +384,11 @@
          <signaler class="org.openpnp.machine.reference.signaler.SoundSignaler" id="SIG169ed70bca49a34c" name="SoundSignaler" enable-error-sound="true" enable-finished-sound="true"/>
       </signalers>
       <feeders>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR170c4e6bae8d90b0" name="ReferenceAutoFeeder" enabled="false" part-id="FIDUCIAL-HOME" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="Feeder in place detection" actuator-value="118.0" post-pick-actuator-name="feeder forward" post-pick-actuator-value="118.0" move-before-feed="true">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR170c4e6bae8d90b0" name="ReferenceAutoFeeder" enabled="false" part-id="FIDUCIAL-HOME" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="Feeder in place detection" actuator-value="120.0" post-pick-actuator-name="feeder forward" post-pick-actuator-value="120.0" move-before-feed="true">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17599a029bc3c4b8" name="ReferenceAutoFeeder" enabled="true" part-id="r1k" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="" actuator-value="118.0" post-pick-actuator-name="" post-pick-actuator-value="0.0" move-before-feed="false">
-            <location units="Millimeters" x="-209.411" y="-237.164" z="-17.1" rotation="0.0"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.rapidplacer.RapidFeeder" version="1.1" id="FDR1759e04c78400648" name="RapidFeeder" enabled="false" part-id="FIDUCIAL-HOME" feed-retry-count="3" pick-retry-count="0" address="N118" pitch="4">
-            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <scan-start-location units="Millimeters" x="-211.257" y="-205.373" z="0.0" rotation="0.0"/>
-            <scan-end-location units="Millimeters" x="-191.257" y="-205.373" z="0.0" rotation="0.0"/>
-            <scan-increment value="4.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.rapidplacer.RapidFeeder" version="1.1" id="FDR1759e05f8def0b30" name="118" enabled="false" part-id="r1k" feed-retry-count="3" pick-retry-count="0" address="118 F2" pitch="2">
-            <location units="Millimeters" x="-212.33298686395196" y="-204.59004356391637" z="0.0" rotation="0.0"/>
-            <scan-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <scan-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <scan-increment value="4.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.rapidplacer.RapidFeeder" version="1.1" id="FDR1759e0602d4143d8" name="119" enabled="false" part-id="r1k" feed-retry-count="3" pick-retry-count="0" address="119" pitch="4">
-            <location units="Millimeters" x="-202.23707510765888" y="-204.63125179739444" z="0.0" rotation="0.0"/>
-            <scan-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <scan-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <scan-increment value="4.0" units="Millimeters"/>
-         </feeder>
-         <feeder class="org.openpnp.machine.rapidplacer.RapidFeeder" version="1.1" id="FDR1759e0602d4a5f2a" name="120" enabled="false" part-id="r1k" feed-retry-count="3" pick-retry-count="0" address="120" pitch="4">
-            <location units="Millimeters" x="-192.0383536593465" y="-204.68276208924206" z="0.0" rotation="0.0"/>
-            <scan-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <scan-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-            <scan-increment value="4.0" units="Millimeters"/>
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17599a029bc3c4b8" name="ReferenceAutoFeeder" enabled="true" part-id="r1k" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="feeder forward" actuator-value="118.0" post-pick-actuator-name="" post-pick-actuator-value="0.0" move-before-feed="false">
+            <location units="Millimeters" x="-231.171" y="-237.202" z="-17.1" rotation="0.0"/>
          </feeder>
       </feeders>
       <cameras>
@@ -506,10 +455,10 @@
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16d609b4dba3d0f0" name="feeder forward X2" value-type="Double" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16984b306c807ec4" name="feeder Power supply development" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="AssumeUnknown" disabled-actuation="AssumeUnknown" index="0">
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16984b306c807ec4" name="feeder power" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="AssumeUnknown" disabled-actuation="AssumeUnknown" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1697ad30f05ea070" name="feeder back" value-type="Double" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1697ad30f05ea070" name="feeder unload" value-type="Double" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16c35acf7ddc1b2c" name="Feeder in place detection" value-type="Double" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
@@ -523,23 +472,14 @@
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <safe-z value="0.0" units="Millimeters"/>
          </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16a5cd8bacd14f2c" name="网络开关 (network switch?)" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-         </actuator>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16b3faef7ab83c04" name="Set feeder address" value-type="Double" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16c273e42abdba7c" name="Open  Nozzle Replacement" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="LeaveAsIs" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16c273e42abdba7c" name="Nozzle Changer" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="LeaveAsIs" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <actuator-profiles>
                <profiles/>
             </actuator-profiles>
-         </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16c273e50b7d6e54" name="关闭电磁阀（吸嘴更换）(close feeder?)" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
-         </actuator>
-         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1759e01abaad6a20" name="RAPIDFEEDER" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
-            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
       </actuators>
       <part-alignments>
