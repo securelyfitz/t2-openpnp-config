@@ -380,7 +380,7 @@
                   <back-light-compensation property="BackLightCompensation" value="0" auto="false"/>
                   <brightness property="Brightness" value="0" auto="false"/>
                   <contrast property="Contrast" value="38" auto="false"/>
-                  <exposure property="Exposure" value="166" auto="false"/>
+                  <exposure property="Exposure" value="100" auto="false"/>
                   <focus property="Focus" value="68" auto="false"/>
                   <gain property="Gain" value="1" auto="false"/>
                   <gamma property="Gamma" value="400" auto="false"/>
@@ -412,7 +412,7 @@
          </feeder>
       </feeders>
       <cameras>
-         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1596351966839" name="Bottom Vision" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="true" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="100" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="11" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.10010648333963085" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.0" green-balance="1.0" blue-balance="1.0" red-gamma="1.0" green-gamma="1.0" blue-gamma="1.0" deinterlace="false" light-actuator-id="ACT1595941868982" allow-machine-actuators="false" focus-sensing-method="AutoFocus" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="bottom: bottom usb-0000:00:15.0-1.3" format-id="0" freeze-properties="false">
+         <camera class="org.openpnp.machine.reference.camera.OpenPnpCaptureCamera" id="CAM1596351966839" name="Bottom Vision" looking="Up" auto-visible="true" shown-in-multi-camera-view="true" before-capture-light-on="true" user-action-light-on="true" after-capture-light-off="true" anti-glare-light-off="true" enable-units-per-pixel-3-d="false" auto-view-plane-z="false" max-relative-motion="0.05" min-motion-template-match-score="0.9" min-contrast-range="16.0" settle-method="Motion" settle-time-ms="100" settle-timeout-ms="600" settle-threshold="1.0" settle-debounce="2" settle-full-color="false" settle-gaussian-blur="11" settle-gradients="false" settle-mask-circle="0.0" settle-contrast-enhance="0.0" settle-diagnostics="true" fps="5.0" suspend-preview-in-tasks="true" capture-try-count="4" capture-try-timeout-ms="2000" rotation="-0.10010648333963085" flip-x="true" flip-y="false" offset-x="0" offset-y="0" crop-width="0" crop-height="0" scale-width="0" scale-height="0" red-balance="1.136150234741784" green-balance="1.0" blue-balance="1.1050228310502284" red-gamma="0.9851158840267947" green-gamma="0.9748538326935348" blue-gamma="1.0402000079618483" deinterlace="false" light-actuator-id="ACT1595941868982" allow-machine-actuators="false" focus-sensing-method="AutoFocus" white-balance-lead-fractile="0.8" white-balance-clip-fractile="0.99" white-balance-gamma-fractile="0.5" unique-id="bottom: bottom usb-0000:00:15.0-1.3" format-id="0" freeze-properties="false">
             <units-per-pixel units="Millimeters" x="0.02286471925115392" y="0.022812346304349463" z="0.0" rotation="0.0"/>
             <camera-primary-z value="0.21333333333333318" units="Millimeters"/>
             <default-z value="0.0" units="Millimeters"/>
@@ -450,6 +450,9 @@
             <focus-provider class="org.openpnp.machine.reference.camera.AutoFocusProvider" averaged-frames="1" focus-speed="0.5" show-diagnostics="true">
                <focal-resolution value="0.05" units="Millimeters"/>
             </focus-provider>
+            <red-color-map length="8">0.06666666666666667, 0.20784313725490197, 0.35294117647058826, 0.5098039215686274, 0.6352941176470588, 0.7764705882352941, 0.9254901960784314, 1.0</red-color-map>
+            <green-color-map length="8">0.058823529411764705, 0.1843137254901961, 0.3058823529411765, 0.43137254901960786, 0.5294117647058824, 0.6745098039215687, 0.8117647058823529, 0.9411764705882353</green-color-map>
+            <blue-color-map length="8">0.06666666666666667, 0.20784313725490197, 0.34901960784313724, 0.5137254901960784, 0.6392156862745098, 0.7725490196078432, 0.9019607843137255, 1.0</blue-color-map>
             <back-light-compensation property="BackLightCompensation" value="1" auto="false"/>
             <brightness property="Brightness" value="0" auto="false"/>
             <contrast property="Contrast" value="38" auto="false"/>
@@ -517,7 +520,7 @@
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME: RepRapFirmware for Duet 2 WiFi/Ethernet FIRMWARE_VERSION: 3.3.0_10 ELECTRONICS: STM32F4 FIRMWARE_DATE: 2021-10-24 10:00:36]]></detected-firmware>
-            <reported-axes><![CDATA[X:-209.506 Y:-195.492 Z:1.440 A:0.000 B:0.000 E:0.000 E0:-0.0 Count -16760 -7820 144 0 0 Machine -209.506 -195.492 1.440 0.000 0.000 Bed comp 0.000]]></reported-axes>
+            <reported-axes><![CDATA[X:-238.118 Y:-195.799 Z:0.000 A:0.000 B:180.000 E:0.000 E0:-0.0 Count -19049 -7832 0 0 1600 Machine -238.118 -195.799 0.000 0.000 180.000 Bed comp 0.000]]></reported-axes>
             <configured-axes><![CDATA[Driver assignments: X0 Y1 Z2 (c)A3 (c)B4 E5, 5 axes visible]]></configured-axes>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
@@ -750,7 +753,7 @@
             <min-part-diameter value="0.5" units="Millimeters"/>
             <max-part-diameter value="10.0" units="Millimeters"/>
             <max-part-height value="3.0" units="Millimeters"/>
-            <max-pick-tolerance value="2.0" units="Millimeters"/>
+            <max-pick-tolerance value="0.1" units="Millimeters"/>
             <calibration angle-subdivisions="6" allow-misdetections="1" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="BrightnessAndKeyColor" background-min-hue="107" background-max-hue="149" background-tol-hue="150" background-min-saturation="240" background-max-saturation="255" background-tol-saturation="8" background-min-value="33" background-max-value="123" background-tol-value="180" background-diagnostics="&lt;html&gt;Non-color-keyed background elements are quite dark. Perfect!&lt;br/&gt;&lt;hr/&gt;The key color is sufficiently consistent.&lt;br/&gt;&lt;hr/&gt;The key color is very vivid. Perfect!&lt;br/&gt;&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
@@ -809,11 +812,11 @@
             <vision-calibration-tolerance value="0.3" units="Millimeters"/>
             <vision-template-image-empty hash="ddf7953f46d6c9ed76e7e31e17e7d962fd7a6167"/>
             <vision-template-image-occupied hash="9b79e16773d7494541402f8403a735a25ee8c602"/>
-            <min-part-diameter value="0.0" units="Millimeters"/>
+            <min-part-diameter value="10.0" units="Millimeters"/>
             <max-part-diameter value="20.0" units="Millimeters"/>
             <max-part-height value="10.0" units="Millimeters"/>
-            <max-pick-tolerance value="2.0" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="2" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="None" background-min-hue="0" background-max-hue="0" background-tol-hue="8" background-min-saturation="0" background-max-saturation="0" background-tol-saturation="8" background-min-value="0" background-max-value="0" background-tol-value="8" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+            <max-pick-tolerance value="0.1" units="Millimeters"/>
+            <calibration angle-subdivisions="6" allow-misdetections="2" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="Brightness" background-min-hue="0" background-max-hue="255" background-tol-hue="8" background-min-saturation="0" background-max-saturation="255" background-tol-saturation="8" background-min-value="0" background-max-value="127" background-tol-value="8" background-diagnostics="&lt;html&gt;Background elements are sufficiently dark. &lt;br/&gt;&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
@@ -829,7 +832,12 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
+               <runout-compensation-lookup class="java.util.HashMap">
+                  <entry>
+                     <string>NOZ169b7200890d27dc</string>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="-0.10289123663019265" center-y="-0.003802057717391573" radius="0.17281063199510635" phase-shift="20.763200199399424" units="Millimeters" peak-error="0.061370273659882284" rms-error="0.039224733813224937"/>
+                  </entry>
+               </runout-compensation-lookup>
                <minimum-detail-size value="0.2" units="Millimeters"/>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
