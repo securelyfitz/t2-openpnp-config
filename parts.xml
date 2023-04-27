@@ -1,5 +1,5 @@
 <openpnp-parts>
    <part fiducial-vision-id="FVS170c4d7a87c9eaec" id="FIDUCIAL-HOME" name="Important do not delete ！！" height-units="Millimeters" height="0.0" package-id="FIDUCIAL-HOME" speed="1.0" pick-retry-count="0"/>
    <part id="MARK_1MM_3MM-MARK_1MM_3MM" name="Important do not delete ！！" height-units="Millimeters" height="1.0" package-id="MARK_1MM_3MM" speed="1.0" pick-retry-count="0"/>
-   <part id="r1k" height-units="Millimeters" height="1.0" package-id="R1206" speed="1.0" pick-retry-count="0"/>
+   <part id="r1k" height-units="Millimeters" height="1.0" package-id="R0805" speed="1.0" pick-retry-count="0"/>
 </openpnp-parts>
