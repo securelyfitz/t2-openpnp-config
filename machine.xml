@@ -268,12 +268,13 @@
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="ResetToHomeLocation" nozzle-solution="DualNegated" nozzle-solutions-multiplier="1">
             <nozzles>
-               <nozzle class="org.openpnp.machine.reference.ContactProbeNozzle" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1678673540756424" axis-rotation-id="AXS1678673540a12168" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" current-nozzle-tip-id="TIP1598714132728" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="false" contact-probe-speed="0.05" sniffle-dwell-time="250" contact-probe-method="None" feeder-height-probing="EachTime" part-height-probing="EachTime" discard-probing="false" max-Z-offset-mm="2.0">
+               <nozzle class="org.openpnp.machine.reference.ContactProbeNozzle" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1678673540756424" axis-rotation-id="AXS1678673540a12168" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="false" contact-probe-speed="0.05" sniffle-dwell-time="250" contact-probe-method="None" feeder-height-probing="EachTime" part-height-probing="EachTime" discard-probing="false" max-Z-offset-mm="2.0">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>TIP1598714132728</string>
                   </compatible-nozzle-tip-ids>
                   <head-offsets units="Millimeters" x="41.68714878849761" y="-9.320159047636187" z="0.0" rotation="0.0"/>
-                  <manual-nozzle-tip-change-location units="Millimeters" x="-155.12885121150234" y="-306.9661590476362" z="0.0" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="-164.328" y="-258.312" z="-20.0" rotation="0.0"/>
+                  <vacuum-sense-actuator-name>A1</vacuum-sense-actuator-name>
                   <vacuum-actuator-name>A1</vacuum-actuator-name>
                   <contact-probe-start-offset-z value="1.0" units="Millimeters"/>
                   <contact-probe-depth-z value="2.0" units="Millimeters"/>
@@ -287,7 +288,7 @@
                      <string>TIP16c7f28c557d1d93</string>
                   </compatible-nozzle-tip-ids>
                   <head-offsets units="Millimeters" x="71.22553876186734" y="-9.435413325645202" z="-0.6799999999999926" rotation="0.0"/>
-                  <manual-nozzle-tip-change-location units="Millimeters" x="-96.91354940896619" y="-307.4304133256451" z="-1.0799999999999752" rotation="0.0"/>
+                  <manual-nozzle-tip-change-location units="Millimeters" x="-164.328" y="-258.312" z="-20.0" rotation="0.0"/>
                   <vacuum-actuator-name>A2</vacuum-actuator-name>
                   <contact-probe-start-offset-z value="1.0" units="Millimeters"/>
                   <contact-probe-depth-z value="2.0" units="Millimeters"/>
@@ -413,8 +414,32 @@
          <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR170c4e6bae8d90b0" name="ReferenceAutoFeeder" enabled="false" part-id="FIDUCIAL-HOME" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="Feeder in place detection" actuator-value="118.0" post-pick-actuator-name="feeder forward" post-pick-actuator-value="118.0" move-before-feed="true">
             <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </feeder>
-         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17599a029bc3c4b8" name="ReferenceAutoFeeder" enabled="true" part-id="r1k" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="feeder forward" actuator-value="118.0" post-pick-actuator-value="0.0" move-before-feed="false">
+         <feeder class="org.openpnp.machine.reference.feeder.ReferenceAutoFeeder" version="1.1" id="FDR17599a029bc3c4b8" name="ReferenceAutoFeeder" enabled="true" part-id="r1k" retry-count="3" feed-retry-count="3" pick-retry-count="0" actuator-name="" actuator-value="118.0" post-pick-actuator-name="" post-pick-actuator-value="0.0" move-before-feed="false">
             <location units="Millimeters" x="-209.411" y="-237.164" z="-17.1" rotation="0.0"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.rapidplacer.RapidFeeder" version="1.1" id="FDR1759e04c78400648" name="RapidFeeder" enabled="false" part-id="FIDUCIAL-HOME" feed-retry-count="3" pick-retry-count="0" address="N118" pitch="4">
+            <location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <scan-start-location units="Millimeters" x="-211.257" y="-205.373" z="0.0" rotation="0.0"/>
+            <scan-end-location units="Millimeters" x="-191.257" y="-205.373" z="0.0" rotation="0.0"/>
+            <scan-increment value="4.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.rapidplacer.RapidFeeder" version="1.1" id="FDR1759e05f8def0b30" name="118" enabled="false" part-id="r1k" feed-retry-count="3" pick-retry-count="0" address="118 F2" pitch="2">
+            <location units="Millimeters" x="-212.33298686395196" y="-204.59004356391637" z="0.0" rotation="0.0"/>
+            <scan-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <scan-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <scan-increment value="4.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.rapidplacer.RapidFeeder" version="1.1" id="FDR1759e0602d4143d8" name="119" enabled="false" part-id="r1k" feed-retry-count="3" pick-retry-count="0" address="119" pitch="4">
+            <location units="Millimeters" x="-202.23707510765888" y="-204.63125179739444" z="0.0" rotation="0.0"/>
+            <scan-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <scan-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <scan-increment value="4.0" units="Millimeters"/>
+         </feeder>
+         <feeder class="org.openpnp.machine.rapidplacer.RapidFeeder" version="1.1" id="FDR1759e0602d4a5f2a" name="120" enabled="false" part-id="r1k" feed-retry-count="3" pick-retry-count="0" address="120" pitch="4">
+            <location units="Millimeters" x="-192.0383536593465" y="-204.68276208924206" z="0.0" rotation="0.0"/>
+            <scan-start-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <scan-end-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <scan-increment value="4.0" units="Millimeters"/>
          </feeder>
       </feeders>
       <cameras>
@@ -511,6 +536,9 @@
             </actuator-profiles>
          </actuator>
          <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT16c273e50b7d6e54" name="关闭电磁阀（吸嘴更换）(close feeder?)" value-type="Boolean" value-type-confirmed="true" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1759e01abaad6a20" name="RAPIDFEEDER" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV16913afc4d178bf4" coordinated-before-actuate="true" coordinated-after-actuate="false" coordinated-before-read="true" enabled-actuation="AssumeUnknown" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
             <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
          </actuator>
       </actuators>
@@ -660,6 +688,9 @@
             <command head-mountable-id="ACT1759a394881ee2d6" type="ACTUATE_BOOLEAN_COMMAND">
                <text><![CDATA[{True:M600 N118 F1 T}]]></text>
             </command>
+            <command head-mountable-id="ACT1759e01abaad6a20" type="ACTUATE_STRING_COMMAND">
+               <text><![CDATA[M600 N{StringValue} F1 T]]></text>
+            </command>
          </driver>
       </drivers>
       <discard-location units="Millimeters" x="-222.345" y="-169.145" z="0.0" rotation="0.0"/>
@@ -767,7 +798,7 @@
             <max-part-diameter value="10.0" units="Millimeters"/>
             <max-part-height value="3.0" units="Millimeters"/>
             <max-pick-tolerance value="0.1" units="Millimeters"/>
-            <calibration angle-subdivisions="6" allow-misdetections="1" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="BrightnessAndKeyColor" background-min-hue="107" background-max-hue="149" background-tol-hue="150" background-min-saturation="240" background-max-saturation="255" background-tol-saturation="8" background-min-value="33" background-max-value="123" background-tol-value="180" background-diagnostics="&lt;html&gt;Non-color-keyed background elements are quite dark. Perfect!&lt;br/&gt;&lt;hr/&gt;The key color is sufficiently consistent.&lt;br/&gt;&lt;hr/&gt;The key color is very vivid. Perfect!&lt;br/&gt;&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
+            <calibration angle-subdivisions="6" allow-misdetections="1" angle-start="-180.0" angle-stop="180.0" excenter-ratio="0.25" enabled="true" fail-homing="true" runout-compensation-algorithm="ModelCameraOffsetAffine" version="2.1" recalibration-trigger="NozzleTipChangeInJob" background-calibration-method="BrightnessAndKeyColor" background-min-hue="15" background-max-hue="28" background-tol-hue="150" background-min-saturation="63" background-max-saturation="129" background-tol-saturation="8" background-min-value="128" background-max-value="186" background-tol-value="180" background-diagnostics="&lt;html&gt;Non-color-keyed background elements are too bright.&lt;br/&gt;Try to eliminate highlights and reflections.&lt;br/&gt;Use a shade behind the nozzle.&lt;br/&gt;Renew the blackening of dark parts of the nozzle tip.&lt;br/&gt;Clean the nozzle tip. If it is shiny, make it dull.&lt;br/&gt;Eliminate light sources that reflect on the nozzle tip.&lt;/html&gt;" min-background-mask-value="32" max-background-mask-value="128" background-worst-saturation="63" background-worst-hue-span="42" background-worst-value="127" offset-threshold="0.0" detection-threshold-margin="0.4">
                <pipeline>
                   <stages>
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageCapture" name="0" enabled="true" default-light="false" settle-option="Settle" count="1">
@@ -783,7 +814,12 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap"/>
+               <runout-compensation-lookup class="java.util.HashMap">
+                  <entry>
+                     <string>N1</string>
+                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.20578247326038526" center-y="0.09885350065218101" radius="0.017353520805348445" phase-shift="-153.48746857173057" units="Millimeters" peak-error="0.019119096395132724" rms-error="0.010834365884099039"/>
+                  </entry>
+               </runout-compensation-lookup>
                <minimum-detail-size value="0.8" units="Millimeters"/>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
