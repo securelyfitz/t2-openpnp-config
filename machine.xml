@@ -268,7 +268,7 @@
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="ResetToHomeLocation" nozzle-solution="DualNegated" nozzle-solutions-multiplier="1">
             <nozzles>
-               <nozzle class="org.openpnp.machine.reference.ContactProbeNozzle" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1678673540756424" axis-rotation-id="AXS1678673540a12168" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" current-nozzle-tip-id="TIP1598714132728" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="false" contact-probe-speed="0.05" sniffle-dwell-time="250" contact-probe-method="None" feeder-height-probing="EachTime" part-height-probing="EachTime" discard-probing="false" max-Z-offset-mm="2.0">
+               <nozzle class="org.openpnp.machine.reference.ContactProbeNozzle" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1678673540756424" axis-rotation-id="AXS1678673540a12168" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" current-nozzle-tip-id="TIP1598714132728" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="false" contact-probe-speed="0.05" sniffle-dwell-time="250" contact-probe-method="None" feeder-height-probing="EachTime" part-height-probing="EachTime" discard-probing="false" max-Z-offset-mm="2.0">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>TIP1598714132728</string>
                   </compatible-nozzle-tip-ids>
@@ -282,7 +282,7 @@
                   <probed-feeder-height-offsets/>
                   <probed-part-height-offsets/>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ContactProbeNozzle" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1696d548d2b00778" axis-rotation-id="AXS1678673540a30244" id="NOZ169b7200890d27dc" name="N2" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="false" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" current-nozzle-tip-id="TIP16c7f28c557d1d93" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true" contact-probe-speed="0.05" sniffle-dwell-time="250" contact-probe-method="None" feeder-height-probing="EachTime" part-height-probing="EachTime" discard-probing="false" max-Z-offset-mm="2.0">
+               <nozzle class="org.openpnp.machine.reference.ContactProbeNozzle" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1696d548d2b00778" axis-rotation-id="AXS1678673540a30244" id="NOZ169b7200890d27dc" name="N2" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" current-nozzle-tip-id="TIP16c7f28c557d1d93" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true" contact-probe-speed="0.05" sniffle-dwell-time="250" contact-probe-method="None" feeder-height-probing="EachTime" part-height-probing="EachTime" discard-probing="false" max-Z-offset-mm="2.0">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>TIP16c7f28c557d1d93</string>
                   </compatible-nozzle-tip-ids>
@@ -520,13 +520,13 @@
          </part-alignment>
       </part-alignments>
       <drivers>
-         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV1696be2db39b3718" name="GcodeDriver (STM)" motion-control-type="ModeratedConstantAcceleration" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="50000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="15000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="true" remove-comments="true" compress-gcode="true" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
-            <serial line-ending-type="LF" port-name="ttyACM0" baud="250000" flow-control="Off" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV1696be2db39b3718" name="GcodeDriver (STM)" motion-control-type="ModeratedConstantAcceleration" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="0" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="15000" connect-wait-time-milliseconds="3000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="true" remove-comments="true" compress-gcode="true" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
+            <serial line-ending-type="LF" port-name="ttyACM0" baud="250000" flow-control="RtsCts" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="192.168.1.221" port="21" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <detected-firmware><![CDATA[FIRMWARE_NAME: RepRapFirmware for Duet 2 WiFi/Ethernet FIRMWARE_VERSION: 3.3.0_10 ELECTRONICS: STM32F4 FIRMWARE_DATE: 2021-10-24 10:00:36]]></detected-firmware>
-            <reported-axes><![CDATA[X:-343.273 Y:-204.451 Z:0.000 A:0.000 B:0.000 E:0.000 E0:-0.0 Count -27462 -8178 0 0 0 Machine -343.273 -204.451 0.000 0.000 0.000 Bed comp 0.000]]></reported-axes>
+            <reported-axes><![CDATA[X:0.010 Y:0.000 Z:0.000 A:0.000 B:0.000 E:0.000 E0:-0.0 Count 1 0 0 0 0 Machine 0.010 0.000 0.000 0.000 0.000 Bed comp 0.000]]></reported-axes>
             <configured-axes><![CDATA[Driver assignments: X0 Y1 Z2 (c)A3 (c)B4 E5, 5 axes visible]]></configured-axes>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[^ok.*]]></text>
@@ -536,13 +536,14 @@
                <text><![CDATA[G90 ; Set absolute positioning mode]]></text>
             </command>
             <command type="HOME_COMMAND">
+               <text><![CDATA[{Acceleration:M204 S%.2f ; Initialize acceleration}]]></text>
                <text><![CDATA[G28 ; Home all axes]]></text>
             </command>
             <command type="MOVE_TO_COMPLETE_COMMAND">
                <text><![CDATA[M400 ; Wait for moves to complete before returning]]></text>
             </command>
             <command type="POSITION_REPORT_REGEX">
-               <text><![CDATA[^.*X:(?<X>-?\d+\.\d+) Y:(?<Y>-?\d+\.\d+) Z:(?<Z>-?\d+\.\d+) .*A:(?<A>-?\d+\.\d+) B:(?<B>-?\d+\.\d+).*]]></text>
+               <text><![CDATA[^.*X:(?<X>-?\d+\.\d+) Y:(?<Y>-?\d+\.\d+) Z:(?<Z>-?\d+\.\d+) A:(?<A>-?\d+\.\d+) B:(?<B>-?\d+\.\d+).*]]></text>
             </command>
             <command type="SET_GLOBAL_OFFSETS_COMMAND">
                <text><![CDATA[G92 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} {B:B%.4f} ; reset coordinates]]></text>
@@ -551,7 +552,7 @@
                <text><![CDATA[M114 ; get position]]></text>
             </command>
             <command type="MOVE_TO_COMMAND">
-               <text><![CDATA[{Acceleration:M204 S%.2f} G1 {X:X%.4f} {Y:Y%.4f} {Z:Z%.4f} {A:A%.4f} {B:B%.4f} {FeedRate:F%.2f} ; move to target]]></text>
+               <text><![CDATA[{Acceleration:M204 S%.0f }G1 {X:X%.2f} {Y:Y%.2f} {Z:Z%.2f} {A:A%.1f} {B:B%.1f} {FeedRate:F%.0f} ; move to target]]></text>
             </command>
             <command head-mountable-id="ACT1595941825286" type="ACTUATE_BOOLEAN_COMMAND">
                <text><![CDATA[{True:M42 P4 S255}{False:M42 P4 S0}]]></text>
@@ -584,11 +585,12 @@
                <text><![CDATA[M84]]></text>
             </command>
          </driver>
-         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV16913afc4d178bf4" name="Feeder (CH341)" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="3000" connect-wait-time-milliseconds="5000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="false" infinity-timeout-milliseconds="60000">
+         <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV16913afc4d178bf4" name="Feeder (CH341)" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="3000" connect-wait-time-milliseconds="5000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
             <serial line-ending-type="LF" port-name="ttyUSB0" baud="9600" flow-control="RtsCts" data-bits="Eight" stop-bits="One" parity="None" set-dtr="false" set-rts="false" name="SerialPortCommunications"/>
             <tcp line-ending-type="LF" ip-address="127.0.0.1" port="23" name="TcpCommunications"/>
             <simulated line-ending-type="LF"/>
             <homing-fiducial-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+            <detected-firmware><![CDATA[FIRMWARE_NAME:GcodeServer, FIRMWARE_URL:http%3A//openpnp.org, X-SOURCE_CODE_URL:https%3A//github.com/openpnp/openpnp, FIRMWARE_VERSION:2023-03-15_00-30-21.460d8aa, X-FIRMWARE_BUILD_DATE:Oct 23 2020 00:00:00]]></detected-firmware>
             <command type="COMMAND_CONFIRM_REGEX">
                <text><![CDATA[.*ok.*]]></text>
             </command>
@@ -899,10 +901,14 @@
             <string>44557ff9626740fb3457e097ec9e0a5fcd43d84b</string>
             <string>713706c6a1ca7ac10da84f7ee7ab2689896ab8db</string>
             <string>4cfccdb6189be00811d0ba64fcb2e25386f1eaac</string>
+            <string>678ea85db495b9f9782e887b4089dc16e738f6b8</string>
             <string>bc63a36e6e10fc19a41cea5b38cbe3efa9ed4bf8</string>
+            <string>ba923427e35827672794ca8f9774ecf0d262847c</string>
             <string>9374f3649b45f5354b1b51f0e3ccc0e3f71cf707</string>
             <string>8bbdcbe0a449576710e81afcc91e2ec8b3631ddc</string>
             <string>8645eb508a63deb3da6fc2d4f5804776c514e56f</string>
+            <string>40a769cc1cd2efe92925737952f0555aad4f9d54</string>
+            <string>18460a97ae793b4be0566377fbb33d9a10e2067f</string>
             <string>9a5134d23ae2bdd2bdd4e1400f36a6c23ea0b3f8</string>
             <string>47f118d60e1314c7de28a7865d5760f5f5e6fed0</string>
             <string>7df6a2e93921731251a59e263c9a1e1aa01835cb</string>
@@ -914,6 +920,7 @@
             <string>e93e6ef317c7ab2c23f52b9dbd4f93f4dc61b5c0</string>
             <string>9f523f4e8cb2b4eb59775eb42da6776ffa755f4f</string>
             <string>95ec984e672978009776b642e0fdb100eb4db551</string>
+            <string>376fa3e838d702390128de956c75c40486c679e1</string>
             <string>7eb11a551586c9aa9dc35cd19fe6920b8638b7b6</string>
             <string>c8dba41eadc52b4a72365367bcf894854d7886b0</string>
             <string>364755e28fcb9e1b247e6b34ff0a0b24685ae68e</string>
@@ -922,6 +929,7 @@
             <string>f2f993fd0bc71183d13729502e850607bad84850</string>
             <string>45d683296f9c8d23b6036b95696e232ca176c536</string>
             <string>a541df4574b7220748269cf29960575c74a96a19</string>
+            <string>734777a94b98ec61ec39a49050989a33faf1c87b</string>
          </dismissed-solutions>
          <solved-solutions class="java.util.HashSet">
             <string>c32e8462d632597b433509cc220e442afa24323c</string>
