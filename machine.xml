@@ -268,8 +268,9 @@
       <heads>
          <head class="org.openpnp.machine.reference.ReferenceHead" id="H1" name="H1" vacuum-pump-control="PartOn" pump-on-wait-milliseconds="0" visual-homing-method="ResetToHomeLocation" nozzle-solution="DualNegated" nozzle-solutions-multiplier="1">
             <nozzles>
-               <nozzle class="org.openpnp.machine.reference.ContactProbeNozzle" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1678673540756424" axis-rotation-id="AXS1678673540a12168" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="false" contact-probe-speed="0.05" sniffle-dwell-time="250" contact-probe-method="None" feeder-height-probing="EachTime" part-height-probing="EachTime" discard-probing="false" max-Z-offset-mm="2.0">
+               <nozzle class="org.openpnp.machine.reference.ContactProbeNozzle" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1678673540756424" axis-rotation-id="AXS1678673540a12168" id="N1" name="N1" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" current-nozzle-tip-id="TIP16c7f28c557d1d93" changer-enabled="true" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="false" contact-probe-speed="0.05" sniffle-dwell-time="250" contact-probe-method="None" feeder-height-probing="EachTime" part-height-probing="EachTime" discard-probing="false" max-Z-offset-mm="2.0">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
+                     <string>TIP16c7f28c557d1d93</string>
                      <string>TIP1598714132728</string>
                   </compatible-nozzle-tip-ids>
                   <head-offsets units="Millimeters" x="41.68714878849761" y="-9.320159047636187" z="0.0" rotation="0.0"/>
@@ -283,9 +284,10 @@
                   <probed-feeder-height-offsets/>
                   <probed-part-height-offsets/>
                </nozzle>
-               <nozzle class="org.openpnp.machine.reference.ContactProbeNozzle" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1696d548d2b00778" axis-rotation-id="AXS1678673540a30244" id="NOZ169b7200890d27dc" name="N2" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" current-nozzle-tip-id="TIP16c7f28c557d1d93" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true" contact-probe-speed="0.05" sniffle-dwell-time="250" contact-probe-method="None" feeder-height-probing="EachTime" part-height-probing="EachTime" discard-probing="false" max-Z-offset-mm="2.0">
+               <nozzle class="org.openpnp.machine.reference.ContactProbeNozzle" axis-X-id="AXS16786735405eca98" axis-Y-id="AXS167867354073edec" axis-Z-id="AXS1696d548d2b00778" axis-rotation-id="AXS1678673540a30244" id="NOZ169b7200890d27dc" name="N2" rotation-mode="AbsolutePartAngle" aligning-rotation-mode="true" max-pick-articulation-angle="15.0" max-alignment-articulation-angle="30.0" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" changer-enabled="false" nozzle-tip-changed-on-manual-feed="false" enable-dynamic-safe-z="false" blow-off-closing-valve="true" version="200" limit-rotation="true" contact-probe-speed="0.05" sniffle-dwell-time="250" contact-probe-method="None" feeder-height-probing="EachTime" part-height-probing="EachTime" discard-probing="false" max-Z-offset-mm="2.0">
                   <compatible-nozzle-tip-ids class="java.util.ArrayList">
                      <string>TIP16c7f28c557d1d93</string>
+                     <string>TIP1598714132728</string>
                   </compatible-nozzle-tip-ids>
                   <head-offsets units="Millimeters" x="71.22553876186734" y="-9.435413325645202" z="-0.6799999999999926" rotation="0.0"/>
                   <manual-nozzle-tip-change-location units="Millimeters" x="-164.328" y="-258.312" z="-20.0" rotation="0.0"/>
@@ -481,6 +483,9 @@
                <profiles/>
             </actuator-profiles>
          </actuator>
+         <actuator class="org.openpnp.machine.reference.ReferenceActuator" id="ACT1759e73d84e178a6" name="Nozzle Changer off" value-type="Boolean" value-type-confirmed="false" default-on-double="0.0" default-on-string="" default-off-double="0.0" default-off-string="" interlock-actuator="false" driver-id="DRV1696be2db39b3718" coordinated-before-actuate="true" coordinated-after-actuate="true" coordinated-before-read="true" enabled-actuation="LeaveAsIs" homed-actuation="LeaveAsIs" disabled-actuation="LeaveAsIs" index="0">
+            <head-offsets units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
+         </actuator>
       </actuators>
       <part-alignments>
          <part-alignment class="org.openpnp.machine.reference.vision.ReferenceBottomVision" bottom-vision-id="BVS_Default" enabled="true" pre-rotate="true" max-vision-passes="3" max-angular-offset="30.0" test-alignment-angle="0.0">
@@ -551,6 +556,9 @@
             </command>
             <command type="DISABLE_COMMAND">
                <text><![CDATA[M84]]></text>
+            </command>
+            <command head-mountable-id="ACT1759e73d84e178a6" type="ACTUATE_BOOLEAN_COMMAND">
+               <text><![CDATA[{False:M42 P3 S255}{True:M42 P3 S0}]]></text>
             </command>
          </driver>
          <driver class="org.openpnp.machine.reference.driver.GcodeDriver" id="DRV16913afc4d178bf4" name="Feeder (CH341)" motion-control-type="ToolpathFeedRate" communications="serial" connection-keep-alive="false" sync-initial-location="false" units="Millimeters" max-feed-rate="1000" backlash-offset-x="-1.0" backlash-offset-y="-1.0" backlash-offset-z="0.0" backlash-offset-r="0.0" non-squareness-factor="0.0" backlash-feed-rate-factor="0.1" timeout-milliseconds="3000" connect-wait-time-milliseconds="5000" dollar-wait-time-milliseconds="50" visual-homing-enabled="true" backslash-escaped-characters-enabled="false" remove-comments="false" compress-gcode="false" compression-excludes="[]&quot;" logging-gcode="false" supporting-pre-move="false" using-letter-variables="true" infinity-timeout-milliseconds="60000">
@@ -633,7 +641,7 @@
             </command>
          </driver>
       </drivers>
-      <discard-location units="Millimeters" x="-222.345" y="-169.145" z="0.0" rotation="0.0"/>
+      <discard-location units="Millimeters" x="-166.457" y="-172.586" z="0.0" rotation="0.0"/>
       <properties>
          <entry>
             <string>CameraCalibrationProcessProperties</string>
@@ -719,21 +727,22 @@
       </properties>
       <nozzle-tips>
          <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP1598714132728" name="503" pick-dwell-milliseconds="50" place-dwell-milliseconds="50" place-blow-off-level="0.0" vision-calibration="FirstLocation" vision-calibration-trigger="NozzleTipChange" vision-match-minimum-score="0.6" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="true" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
-            <changer-start-location units="Millimeters" x="-339.979" y="-17.671" z="0.0" rotation="0.0"/>
-            <changer-start-to-mid-speed>0.01</changer-start-to-mid-speed>
-            <changer-mid-location units="Millimeters" x="-339.979" y="-17.671" z="-18.2" rotation="0.0"/>
-            <changer-mid-to-mid-2-speed>0.01</changer-mid-to-mid-2-speed>
-            <changer-mid-location-2 units="Millimeters" x="-339.979" y="-17.671" z="10.0" rotation="0.0"/>
+            <changer-start-location units="Millimeters" x="-345.879" y="-7.139" z="20.0" rotation="0.0"/>
+            <changer-start-to-mid-speed>1.0</changer-start-to-mid-speed>
+            <changer-mid-location units="Millimeters" x="-345.879" y="-7.139" z="-18.0" rotation="0.0"/>
+            <changer-mid-to-mid-2-speed>1.0</changer-mid-to-mid-2-speed>
+            <changer-mid-location-2 units="Millimeters" x="-345.879" y="-7.139" z="20.0" rotation="0.0"/>
             <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
-            <changer-end-location units="Millimeters" x="-279.979" y="-17.671" z="10.0" rotation="0.0"/>
+            <changer-end-location units="Millimeters" x="-315.879" y="-7.139" z="20.0" rotation="0.0"/>
             <touch-location units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <vision-calibration-Z-adjust value="2.0" units="Millimeters"/>
             <vision-template-dimension-x value="20.0" units="Millimeters"/>
             <vision-template-dimension-y value="20.0" units="Millimeters"/>
             <vision-template-tolerance value="4.0" units="Millimeters"/>
             <vision-calibration-tolerance value="0.5" units="Millimeters"/>
-            <vision-template-image-empty hash="f3059ef8396dc9e2ecc5edbe4694d1b2656e9308"/>
-            <vision-template-image-occupied hash="e052f029f42715969741dc72d495033398ab75a9"/>
+            <vision-template-image-empty hash="bed2953690309303a35b5d049c9bb16a872d4e00"/>
+            <vision-template-image-occupied hash="111de757c3249aebb1159c387ef7da60e6a2be40"/>
+            <vision-calibration-offset units="Millimeters" x="0.0" y="0.0" z="0.0" rotation="0.0"/>
             <min-part-diameter value="0.5" units="Millimeters"/>
             <max-part-diameter value="10.0" units="Millimeters"/>
             <max-part-height value="3.0" units="Millimeters"/>
@@ -754,12 +763,7 @@
                      <cv-stage class="org.openpnp.vision.pipeline.stages.ImageWriteDebug" name="deb1" enabled="false" prefix="runout_calibration_result_" suffix=".png"/>
                   </stages>
                </pipeline>
-               <runout-compensation-lookup class="java.util.HashMap">
-                  <entry>
-                     <string>N1</string>
-                     <runout-compensation class="org.openpnp.machine.reference.ReferenceNozzleTipCalibration$ModelBasedRunoutCameraOffsetCompensation" center-x="0.20578247326038526" center-y="0.09885350065218101" radius="0.017353520805348445" phase-shift="-153.48746857173057" units="Millimeters" peak-error="0.019119096395132724" rms-error="0.010834365884099039"/>
-                  </entry>
-               </runout-compensation-lookup>
+               <runout-compensation-lookup class="java.util.HashMap"/>
                <minimum-detail-size value="0.8" units="Millimeters"/>
                <offset-threshold-length value="0.5" units="Millimeters"/>
                <calibration-Z-offset value="0.0" units="Millimeters"/>
@@ -781,26 +785,27 @@
             <vacuum-difference-part-off-low>0.0</vacuum-difference-part-off-low>
             <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
-            <changer-actuator-post-step-one>关闭电磁阀（吸嘴更换）</changer-actuator-post-step-one>
-            <changer-actuator-post-step-two>打开电磁阀（吸嘴更换）</changer-actuator-post-step-two>
-            <changer-actuator-post-step-three>关闭电磁阀（吸嘴更换）</changer-actuator-post-step-three>
+            <changer-actuator-post-step-one>Nozzle Changer off</changer-actuator-post-step-one>
+            <changer-actuator-post-step-two>Nozzle Changer</changer-actuator-post-step-two>
+            <changer-actuator-post-step-three>Nozzle Changer off</changer-actuator-post-step-three>
          </nozzle-tip>
-         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP16c7f28c557d1d93" name="504" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="FirstLocation" vision-calibration-trigger="NozzleTipChange" vision-match-minimum-score="0.2" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
-            <changer-start-location units="Millimeters" x="-340.071" y="-38.084" z="0.0" rotation="0.0"/>
-            <changer-start-to-mid-speed>0.02</changer-start-to-mid-speed>
-            <changer-mid-location units="Millimeters" x="-340.071" y="-38.084" z="-18.6" rotation="0.0"/>
-            <changer-mid-to-mid-2-speed>0.02</changer-mid-to-mid-2-speed>
-            <changer-mid-location-2 units="Millimeters" x="-340.071" y="-38.084" z="10.0" rotation="0.0"/>
-            <changer-mid-2-to-end-speed>1.0</changer-mid-2-to-end-speed>
-            <changer-end-location units="Millimeters" x="-300.37100000000004" y="-38.084" z="10.0" rotation="0.0"/>
-            <touch-location units="Millimeters" x="-0.04200000000003001" y="-18.438" z="0.0" rotation="0.0"/>
-            <vision-calibration-Z-adjust value="20.0" units="Millimeters"/>
+         <nozzle-tip class="org.openpnp.machine.reference.ReferenceNozzleTip" id="TIP16c7f28c557d1d93" name="504" pick-dwell-milliseconds="0" place-dwell-milliseconds="0" place-blow-off-level="0.0" vision-calibration="FirstLocation" vision-calibration-trigger="NozzleTipChange" vision-match-minimum-score="0.6" vision-calibration-max-passes="3" z-calibration-trigger="Manual" z-calibration-fail-homing="true" template-nozzle-tip="false" template-locked="false" establish-part-on-level="false" establish-part-off-level="false" part-off-probing-milliseconds="0" part-off-dwell-milliseconds="0" is-push-and-drag-allowed="false">
+            <changer-start-location units="Millimeters" x="-346.32" y="-27.037" z="20.0" rotation="0.0"/>
+            <changer-start-to-mid-speed>0.1</changer-start-to-mid-speed>
+            <changer-mid-location units="Millimeters" x="-346.32" y="-27.037" z="-18.0" rotation="0.0"/>
+            <changer-mid-to-mid-2-speed>0.1</changer-mid-to-mid-2-speed>
+            <changer-mid-location-2 units="Millimeters" x="-346.32" y="-27.037" z="20.0" rotation="0.0"/>
+            <changer-mid-2-to-end-speed>0.1</changer-mid-2-to-end-speed>
+            <changer-end-location units="Millimeters" x="-316.32" y="-27.037" z="20.0" rotation="0.0"/>
+            <touch-location units="Millimeters" x="-0.4409999999999741" y="-19.898" z="0.0" rotation="0.0"/>
+            <vision-calibration-Z-adjust value="2.0" units="Millimeters"/>
             <vision-template-dimension-x value="20.0" units="Millimeters"/>
             <vision-template-dimension-y value="20.0" units="Millimeters"/>
             <vision-template-tolerance value="4.0" units="Millimeters"/>
-            <vision-calibration-tolerance value="0.3" units="Millimeters"/>
-            <vision-template-image-empty hash="ddf7953f46d6c9ed76e7e31e17e7d962fd7a6167"/>
-            <vision-template-image-occupied hash="9b79e16773d7494541402f8403a735a25ee8c602"/>
+            <vision-calibration-tolerance value="0.5" units="Millimeters"/>
+            <vision-template-image-empty hash="bed2953690309303a35b5d049c9bb16a872d4e00"/>
+            <vision-template-image-occupied hash="111de757c3249aebb1159c387ef7da60e6a2be40"/>
+            <vision-calibration-offset units="Millimeters" x="0.2159003532404995" y="0.21634322575994958" z="0.0" rotation="0.0"/>
             <min-part-diameter value="10.0" units="Millimeters"/>
             <max-part-diameter value="20.0" units="Millimeters"/>
             <max-part-height value="10.0" units="Millimeters"/>
@@ -848,9 +853,9 @@
             <vacuum-difference-part-off-low>0.0</vacuum-difference-part-off-low>
             <vacuum-difference-part-off-high>0.0</vacuum-difference-part-off-high>
             <diameter-low value="0.0" units="Millimeters"/>
-            <changer-actuator-post-step-one>关闭电磁阀（吸嘴更换）</changer-actuator-post-step-one>
-            <changer-actuator-post-step-two>打开电磁阀（吸嘴更换）</changer-actuator-post-step-two>
-            <changer-actuator-post-step-three>关闭电磁阀（吸嘴更换）</changer-actuator-post-step-three>
+            <changer-actuator-post-step-one>Nozzle Changer off</changer-actuator-post-step-one>
+            <changer-actuator-post-step-two>Nozzle Changer</changer-actuator-post-step-two>
+            <changer-actuator-post-step-three>Nozzle Changer off</changer-actuator-post-step-three>
          </nozzle-tip>
       </nozzle-tips>
       <pnp-job-processor class="org.openpnp.machine.reference.ReferencePnpJobProcessor" job-order="Part" max-vision-retries="3" stepping-to-next-motion="true">
